@@ -24,23 +24,7 @@
 &kp ESC        &kp Q  &kp W  &kp F     &kp P           &kp G            &kp J      &kp L  &kp U      &kp Y       &kp SEMICOLON  &kp DELETE
 &kp TAB        &kp A  &kp R  &kp S     &kp T           &kp D            &kp H      &kp N  &kp E      &kp I       &kp O          &kp SQT
 &kp BACKSLASH  &kp Z  &kp X  &kp C     &kp V           &kp B            &kp K      &kp M  &kp COMMA  &kp PERIOD  &kp FSLH       &kp ENTER
-                             &kp LGUI  &kp LEFT_SHIFT  &kp BACKSPACE    &kp SPACE  &mo 2  &kp RALT
-            >;
-        };
-
-        lower_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
-            display-name = "Lower";
-            bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
-&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans    &trans    &trans    &trans     &trans  &trans
-                                        &kp LGUI      &trans        &kp SPACE       &kp RET   &trans    &kp RALT
+                             &kp LGUI  &kp LEFT_SHIFT  &kp BACKSPACE    &kp SPACE  &mo 1  &mo 2
             >;
         };
 
@@ -57,6 +41,22 @@
 &kp TILDE      &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp CARET        &kp MINUS     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_ASTERISK  &kp PIPE
 &kp BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LESS_THAN         &kp GREATER_THAN       &kp GRAVE        &kp KP_EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_DIVIDE    &kp RET
                                                     &kp LGUI              &kp LEFT_SHIFT         &kp BACKSPACE    &kp SPACE     &trans        &kp RALT
+            >;
+        };
+
+        lower_layer {
+            // -----------------------------------------------------------------------------------------
+            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
+            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
+            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
+            //                    | GUI |     | SPC |   | ENT |     | ALT |
+
+            display-name = "Lower";
+            bindings = <
+&kp ESCAPE  &trans        &trans        &trans        &trans        &trans           &kp C_VOLUME_UP  &kp C_BACKLIGHT_TOGGLE  &kp PAGE_DOWN   &kp PRINTSCREEN  &kp PAGE_UP  &kp DELETE
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4     &kp C_VOL_DN     &kp K_VOLUME_UP         &kp HOME        &kp UP_ARROW     &kp END      &kp TAB
+&kp LSHFT   &trans        &trans        &trans        &trans        &trans           &kp C_MUTE       &kp K_VOL_DN            &kp LEFT_ARROW  &kp DOWN         &kp RIGHT    &kp ENTER
+                                        &kp LGUI      &trans        &kp BACKSPACE    &kp SPACE        &trans                  &trans
             >;
         };
 

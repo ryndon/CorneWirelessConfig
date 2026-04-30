@@ -22,9 +22,9 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC                     &kp Q  &kp W  &kp F     &kp P           &kp G            &kp J      &kp L  &kp U      &kp Y       &kp SEMICOLON       &kp DELETE
-&kp TAB                     &kp A  &kp R  &kp S     &kp T           &kp D            &kp H      &kp N  &kp E      &kp I       &kp O               &kp SQT
-&mt LEFT_CONTROL BACKSLASH  &kp Z  &kp X  &kp C     &kp V           &kp B            &kp K      &kp M  &kp COMMA  &kp PERIOD  &mt LEFT_ALT SLASH  &kp ENTER
+&kp ESC                     &kp Q  &kp W  &kp F     &kp P           &kp G            &kp J      &kp L  &kp U      &kp Y       &kp SEMICOLON  &kp DELETE
+&kp TAB                     &kp A  &kp R  &kp S     &kp T           &kp D            &kp H      &kp N  &kp E      &kp I       &kp O          &kp SQT
+&mt LEFT_CONTROL BACKSLASH  &kp Z  &kp X  &kp C     &kp V           &kp B            &kp K      &kp M  &kp COMMA  &kp PERIOD  &kp SLASH      &kp ENTER
                                           &kp LGUI  &kp LEFT_SHIFT  &kp BACKSPACE    &kp SPACE  &mo 1  &mo 2
             >;
         };
@@ -54,10 +54,10 @@
 
             display-name = "Lower";
             bindings = <
-&kp ESCAPE  &trans        &trans        &trans        &trans        &studio_unlock    &kp C_MUTE      &rgb_ug RGB_TOG  &kp PAGE_DOWN   &kp PRINTSCREEN  &kp PAGE_UP  &kp DELETE
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &kp C_PREVIOUS  &kp C_NEXT       &kp HOME        &kp UP_ARROW     &kp END      &kp TAB
-&kp LSHFT   &trans        &trans        &trans        &trans        &trans            &kp C_VOL_DN    &kp C_VOLUME_UP  &kp LEFT_ARROW  &kp DOWN         &kp RIGHT    &kp ENTER
-                                        &kp LGUI      &trans        &kp BACKSPACE     &kp SPACE       &trans           &trans
+&kp ESCAPE  &trans        &trans        &trans        &trans        &studio_unlock    &kp C_MUTE    &rgb_ug RGB_TOG  &kp PAGE_DOWN   &kp PRINTSCREEN  &kp PAGE_UP  &kp DELETE
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &kp C_MUTE    &kp LEFT         &kp DOWN        &kp UP_ARROW     &kp RIGHT    &kp TAB
+&kp LSHFT   &trans        &trans        &trans        &trans        &trans            &kp C_VOL_DN  &kp C_VOLUME_UP  &kp LEFT_ARROW  &kp DOWN         &kp RIGHT    &kp ENTER
+                                        &kp LGUI      &trans        &kp BACKSPACE     &kp SPACE     &trans           &trans
             >;
         };
 
